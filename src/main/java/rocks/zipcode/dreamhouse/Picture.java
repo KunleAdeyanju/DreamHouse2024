@@ -31,6 +31,22 @@ public class Picture
      */
     public void draw()
     {
+        // actually my moon
+        sun = new Circle();
+        sun.changeColor("gray");
+        sun.moveHorizontal(580);
+        sun.moveVertical(-35);
+        sun.changeSize(170);
+        sun.makeVisible();
+
+        // lava moat
+        sun = new Circle();
+        sun.changeColor("red");
+        sun.moveHorizontal(-125);
+        sun.moveVertical(175);
+        sun.changeSize(900);
+        sun.makeVisible();
+
         // mid-tower left
         wall = new Square();
         wall.changeColor("blue");
@@ -167,7 +183,7 @@ public class Picture
         roof.moveVertical(185);
         roof.makeVisible();
 
-        // draw bridge left
+        // draw bridge door left
         wall = new Square();
         wall.changeColor("green");
         wall.moveVertical(345);
@@ -175,7 +191,7 @@ public class Picture
         wall.changeSize(55);
         wall.makeVisible();
 
-        // draw bridge left
+        // draw bridge door right
         wall = new Square();
         wall.changeColor("green");
         wall.moveVertical(345);
@@ -183,20 +199,66 @@ public class Picture
         wall.changeSize(55);
         wall.makeVisible();
 
-
-
+        // Castles still need roofs
         roof = new Triangle();
         roof.changeSize(50, 300);
         roof.moveHorizontal(285);
         roof.moveVertical(235);
         roof.makeVisible();
 
+        // left middle window
         sun = new Circle();
-        sun.changeColor("yellow");
-        sun.moveHorizontal(180);
-        sun.moveVertical(-10);
-        sun.changeSize(60);
+        sun.changeColor("magenta");
+        sun.moveHorizontal(200);
+        sun.moveVertical(270);
+        sun.changeSize(35);
         sun.makeVisible();
+
+        window = new Square();
+        window.changeColor("green");
+        window.moveHorizontal(167);
+        window.moveVertical(286);
+        window.changeSize(22);
+        window.makeVisible();
+
+        // right middle window
+        sun = new Circle();
+        sun.changeColor("magenta");
+        sun.moveHorizontal(395);
+        sun.moveVertical(270);
+        sun.changeSize(35);
+        sun.makeVisible();
+
+        window = new Square();
+        window.changeColor("green");
+        window.moveHorizontal(362);
+        window.moveVertical(286);
+        window.changeSize(22);
+        window.makeVisible();
+
+        // bridges
+        wall = new Square();
+        wall.changeColor("gray");
+        wall.moveVertical(400);
+        wall.moveHorizontal(250);
+        wall.changeSize(60);
+        wall.makeVisible();
+
+        wall = new Square();
+        wall.changeColor("gray");
+        wall.moveVertical(460);
+        wall.moveHorizontal(250);
+        wall.changeSize(60);
+        wall.makeVisible();
+
+        wall = new Square();
+        wall.changeColor("gray");
+        wall.moveVertical(520);
+        wall.moveHorizontal(250);
+        wall.changeSize(60);
+        wall.makeVisible();
+
+
     }
 
     /**
