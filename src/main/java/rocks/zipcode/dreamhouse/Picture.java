@@ -31,21 +31,164 @@ public class Picture
      */
     public void draw()
     {
+        // mid-tower left
         wall = new Square();
-        wall.moveVertical(80);
-        wall.changeSize(100);
+        wall.changeColor("blue");
+        wall.moveVertical(250);
+        wall.moveHorizontal(125);
+        wall.changeSize(150);
         wall.makeVisible();
 
+        // mid-tower right
+        wall = new Square();
+        wall.changeColor("blue");
+        wall.moveVertical(250);
+        wall.moveHorizontal(275);
+        wall.changeSize(150);
+        wall.makeVisible();
+
+        // third square appeared up top
+        // castle left tower lower
+        wall = new Square();
+        wall.changeColor("blue");
+        wall.moveVertical(250);
+        wall.moveHorizontal(-25);
+        wall.changeSize(150);
+        wall.makeVisible();
+
+        // 4th square appeared up top
+        // castle left tower upper
+        wall = new Square();
+        wall.changeColor("blue");
+        wall.moveVertical(100);
+        wall.moveHorizontal(-25);
+        wall.changeSize(150);
+        wall.makeVisible();
+
+        // 5th square
+        // castle right tower lower
+        wall = new Square();
+        wall.changeColor("blue");
+        wall.moveVertical(250);
+        wall.moveHorizontal(425);
+        wall.changeSize(150);
+        wall.makeVisible();
+
+        // 5th square
+        // castle right tower upper
+        wall = new Square();
+        wall.changeColor("blue");
+        wall.moveVertical(100);
+        wall.moveHorizontal(425);
+        wall.changeSize(150);
+        wall.makeVisible();
+
+        // castle notch left 1
         window = new Square();
         window.changeColor("black");
-        window.moveHorizontal(20);
+        window.moveHorizontal(5);
         window.moveVertical(100);
         window.makeVisible();
 
+        // castle notch left 2
+        window = new Square();
+        window.changeColor("black");
+        window.moveHorizontal(65);
+        window.moveVertical(100);
+        window.makeVisible();
+
+        // castle notch right 1
+        window = new Square();
+        window.changeColor("black");
+        window.moveHorizontal(455);
+        window.moveVertical(100);
+        window.makeVisible();
+
+        // castle notch right 2
+        window = new Square();
+        window.changeColor("black");
+        window.moveHorizontal(515);
+        window.moveVertical(100);
+        window.makeVisible();
+
+        // right castle window upper right
+        window = new Square();
+        window.changeColor("black");
+        window.moveHorizontal(485);
+        window.moveVertical(170);
+        window.makeVisible();
+
         roof = new Triangle();
-        roof.changeSize(50, 140);
+        roof.changeColor("magenta");
+        roof.changeSize(20, 30);
+        roof.moveHorizontal(510);
+        roof.moveVertical(185);
+        roof.makeVisible();
+
+        // right castle window upper lower
+        window = new Square();
+        window.changeColor("black");
+        window.moveHorizontal(485);
+        window.moveVertical(270);
+        window.makeVisible();
+
+        roof = new Triangle();
+        roof.changeColor("magenta");
+        roof.changeSize(20, 30);
+        roof.moveHorizontal(510);
+        roof.moveVertical(285);
+        roof.makeVisible();
+
+        // left castle window upper lower
+        window = new Square();
+        window.changeColor("black");
+        window.moveHorizontal(35);
+        window.moveVertical(270);
+        window.makeVisible();
+
+        roof = new Triangle();
+        roof.changeColor("magenta");
+        roof.changeSize(20, 30);
         roof.moveHorizontal(60);
-        roof.moveVertical(70);
+        roof.moveVertical(285);
+        roof.makeVisible();
+
+        // left castle window upper lower
+        window = new Square();
+        window.changeColor("black");
+        window.moveHorizontal(35);
+        window.moveVertical(170);
+        window.makeVisible();
+
+        roof = new Triangle();
+        roof.changeColor("magenta");
+        roof.changeSize(20, 30);
+        roof.moveHorizontal(60);
+        roof.moveVertical(185);
+        roof.makeVisible();
+
+        // draw bridge left
+        wall = new Square();
+        wall.changeColor("green");
+        wall.moveVertical(345);
+        wall.moveHorizontal(225);
+        wall.changeSize(55);
+        wall.makeVisible();
+
+        // draw bridge left
+        wall = new Square();
+        wall.changeColor("green");
+        wall.moveVertical(345);
+        wall.moveHorizontal(280);
+        wall.changeSize(55);
+        wall.makeVisible();
+
+
+
+        roof = new Triangle();
+        roof.changeSize(50, 300);
+        roof.moveHorizontal(285);
+        roof.moveVertical(235);
         roof.makeVisible();
 
         sun = new Circle();
